@@ -1,0 +1,152 @@
+body{
+    padding: 100px 50px;
+}
+header{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 0;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.171);
+}
+.display{
+    display: flex;
+    gap: 20px;
+    width: 80%;
+}
+
+.display div{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color: white;
+    height: 130px;
+    padding: 50px 0 0 20px;
+    font-weight: 600;
+    border-radius: 10px;  
+    width: 33%; 
+}
+.display span{
+    font-size: 36px;
+}
+.deposit-output{
+    background-color: #006778;
+}
+.withdraw-output{
+    background-color: #0093AB;
+}
+.balance{
+    background-color: #14C38E;
+}
+.calculate{
+    display: flex;
+    gap: 30px;
+    width: 80%;
+}
+.calculate div{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color: white;
+    height: 130px;
+    padding: 50px 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 50%;
+}
+.deposit-input{
+    background-color: #F55353;
+}
+.deposit-error-message, .withdraw-error-message{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+.withdraw-input{
+    background-color: #FED049;
+}
+/* .calculate button{
+    background-color: ;
+    padding: 5px;
+    margin-top: 15px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    border-style: none;
+} */
+#deposit-button{
+    width: 130px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    border: 2px solid #ffffff;
+    outline: none;
+    transition: 1s ease-in-out;   
+  }
+#deposit-button svg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+#deposit-button:hover{
+    transition: 1s ease-in-out;
+    background: #ffffff;
+    color: #F55353;
+  }
+#deposit-button:hover svg{
+    stroke-dashoffset: -480;
+  } 
+#withdraw-button{
+    width: 130px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    border: 2px solid #ffffff;
+    outline: none;
+    transition: 1s ease-in-out;   
+}
+#withdraw-button svg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+#withdraw-button:hover{
+    transition: 1s ease-in-out;
+    background: #ffffff;
+    color: #FED049;
+}
+#withdraw-button:hover svg{
+    stroke-dashoffset: -480;
+} 
+.calculate input{
+    padding: 5px;
+    width: 350px;
+    border-radius: 5px;
+    border-style: none;
+    outline-color: rgb(215, 215, 215);
+}

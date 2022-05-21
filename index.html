@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Online Banking</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Online Banking Management</h1>
+    </header>
+
+    <main>
+        <section class="display">
+            <div class="deposit-output">
+                Deposit amount <br>
+                $<span id="deposit-value">0</span>
+            </div>
+            <div class="withdraw-output">
+                Withdraw amount <br>
+                $<span id="withdraw-value">0</span>
+            </div>
+            <div class="balance">
+                Balance amount <br>
+                $<span id="balance-value">0</span>
+            </div>
+        </section>
+        <section class="calculate">
+            <div class="deposit-input">
+                <label for="deposit">
+                    Deposit:
+                </label>
+                <br>
+                <input type="number" name="deposit" id="deposit"> <br>
+                <p class="deposit-error-message"></p>
+                <button id="deposit-button">Deposit
+                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                      </svg>
+                </button>
+            </div>
+            <div class="withdraw-input">
+                <label for="withdraw">
+                    Withdraw:
+                </label>
+               <br>
+                <input type="number" name="withdraw" id="withdraw"> <br>
+                <p class="withdraw-error-message"></p>
+                <button id="withdraw-button">Withdraw
+                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                      </svg>
+                </button>
+            </div>
+
+        </section>
+    </main>
+
+ 
+</body>
+</html>
